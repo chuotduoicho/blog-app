@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 const app = express();
-const PORT = "https://ductai-blog-app.herokuapp.com/";
+const PORT = process.env.PORT || 5000;
 
 const URI = process.env.DATABASE_URL;
 
